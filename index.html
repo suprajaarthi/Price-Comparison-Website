@@ -3,11 +3,15 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Welcome to Swift Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"  media="screen" />
 	<link rel="stylesheet" type="text/css" href="assets/css/common.css" media="screen" />
 	<script src="assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="assets/js/slides.min.jquery.js" type="text/javascript"></script>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+
 	<script type="text/javascript">
 		$(function(){
 			$('.slides').slides({
@@ -32,8 +36,8 @@
     <!--Header-->
     <div id="header">
           <div class="primary-section">
-        <div class="logo"> <img src="assets/images/logo.png" alt="logo" title="swiftsearch" /></a></div>
-        <div class="header-aside"> <span>Call Us: +91 7358533070</span>
+        <div class="logo"> <img src="assets/images/logo.png" alt="logo" title="swiftsearch" style="position: relative;margin-left: 250px" /></a></div>
+        <div class="header-aside" > <span style="position: relative;margin-bottom: -300px" >Call Us: 044 666000</span>
               <ul>
             <li class="border"><a href="#" class="log"> View Items </a></li>
             <li><a href="#" class="user">Compare Price</a></li>
@@ -43,6 +47,7 @@
       </div>
           <div class="nav-section">
         <ul class="navigation">
+          <img src="gg.jpg" style="position: relative;margin-left: -80px;top: 24px;height: 90px">
                   </ul>
       <br><br><br><br><br><br>
       <!-- <div id="categ">
@@ -60,7 +65,7 @@
               
         </div>
         <div class="latest-product ">
-              <h2>Our Services</h2>
+              <h2>OUR SERVICES</h2>
               <ul class="info">
             <li><a href="#">Compare Prices</a></li>
             <li><a href="#">Search Engine</a></li>
@@ -69,8 +74,116 @@
 <!--             <li><a href="#">gravida auctor</a></li>
  -->          </ul>
               <a href="#" class="auct">View More <span>&raquo;</span></a> </div>
+              <!-- <h1>hhhhhh</h1><h1>hhhhhh</h1><h1>hhhhhh</h1><h1>hhhhhh</h1> -->
+              <!-- <img src="gg.jpg"> -->
+                      <div class="latest-product f-des">
+
+              <h2> GIFT CARDS</h2></div>
+              <img src="gift.jpg">
+
+              <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?73171';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#101010",
+      "ctaText":"Hey there!",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"20",
+      "marginRight":"50",
+      "position":"left"
+  },
+  "brandSetting":{
+      "brandName":"Swift Search",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Hi, there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#FA7A35",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"917358533088"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+</style>
+</head>
+<body>
+<div class="latest-product f-des">
+<h2>STAR RATING</h2></div>
+<!-- &nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+
+ <div class="rate">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
         <div class="latest-product f-des">
-         <h2>Best Selling</h2>
+         <h2>COMPARE PRICE</h2>
+
 <div class="plugin">             
               <div id="fb-root"></div>
               <div class="fb-like-box" data-href="http://www.facebook.com/" data-width="289" data-show-faces="true" data-stream="false" data-header="true"></div>
@@ -83,8 +196,7 @@
     <br>
   </div>  --> <br><br><br>
 		  <ul class="search-box" style="position: relative;margin-left: -296px">
-              <li><!-- 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+              <li>
             <input type="text" value="search" id="am12" autocomplete="off" onkeypress="submitenter_search(event);" onblur="if (this.value=='')this.value='search';" onfocus="if (this.value=='search')this.value=''"  />
           </li>
               <li class="sms-last">
@@ -128,7 +240,9 @@
                       <p>Lorem Ipsum is simply dummy text of the printing</p>
                       <a href="#"> Click Here <span></span></a></div>
               </div>
+
                 </div>
+
           </div>
             </div>
         
@@ -166,28 +280,466 @@
                 </div>
           </div>
             </div>
+
       </div>
-  <button id="ambu" onclick="myFunction1()">Amazon</button>
-  
-  <button id="flbu" onclick="myFunction2()">Flipkart</button>
+
+  <button id="ambu" onclick="myFunction1()">&nbsp;Amazon&nbsp;</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <button id="flbu" onclick="myFunction2()">Flipkart</button>
   
   <button id="snbu"onclick="myFunction3()">Snapdeal</button>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
-  <button id="bigbu"onclick="myFunction4()">Bigbasket</button>
 <!--   <br> <br>
- -->  <button id="ebbu"onclick="myFunction5()">eBay</button>
-  
-  <button id="mybu"onclick="myFunction6()">Myntra</button>
+ -->  <button id="ebbu"onclick="myFunction5()">eBay&nbsp;&nbsp;&nbsp;</button>
+ <button id="bigbu"onclick="myFunction4()">Bigbasket</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <button id="mybu"onclick="myFunction6()">Myntra&nbsp;</button>
   
   <button id="nabu"onclick="myFunction7()">Naaptol</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="nabu"onclick="myFunction8()">Alibaba</button>
+
         </div>
+<!-- <img src="new.jpg"> -->
+  <div id="buy-now" style="position: relative;margin-left: 450px" >
+
+<script async
+  src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"  >
+
+</script>
+
+<script>
+
+
+  /**
+ * Define the version of the Google Pay API referenced when creating your
+ * configuration
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|apiVersion in PaymentDataRequest}
+ */
+const baseRequest = {
+  apiVersion: 2,
+  apiVersionMinor: 0
+};
+
+/**
+ * Card networks supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm card networks supported by your site and gateway
+ */
+const allowedCardNetworks = ["AMEX", "DISCOVER", "JCB", "MASTERCARD", "VISA"];
+
+/**
+ * Card authentication methods supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm your processor supports Android device tokens for your
+ * supported card networks
+ */
+const allowedCardAuthMethods = ["PAN_ONLY", "CRYPTOGRAM_3DS"];
+
+/**
+ * Identify your gateway and your site's gateway merchant identifier
+ *
+ * The Google Pay API response will return an encrypted payment method capable
+ * of being charged by a supported gateway after payer authorization
+ *
+ * @todo check with your gateway on the parameters to pass
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#gateway|PaymentMethodTokenizationSpecification}
+ */
+const tokenizationSpecification = {
+  type: 'PAYMENT_GATEWAY',
+  parameters: {
+    'gateway': 'example',
+    'gatewayMerchantId': 'exampleGatewayMerchantId'
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method and its required
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const baseCardPaymentMethod = {
+  type: 'CARD',
+  parameters: {
+    allowedAuthMethods: allowedCardAuthMethods,
+    allowedCardNetworks: allowedCardNetworks
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method including optional
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const cardPaymentMethod = Object.assign(
+  {},
+  baseCardPaymentMethod,
+  {
+    tokenizationSpecification: tokenizationSpecification
+  }
+);
+
+/**
+ * An initialized google.payments.api.PaymentsClient object or null if not yet set
+ *
+ * @see {@link getGooglePaymentsClient}
+ */
+let paymentsClient = null;
+
+/**
+ * Configure your site's support for payment methods supported by the Google Pay
+ * API.
+ *
+ * Each member of allowedPaymentMethods should contain only the required fields,
+ * allowing reuse of this base request when determining a viewer's ability
+ * to pay and later requesting a supported payment method
+ *
+ * @returns {object} Google Pay API version, payment methods supported by the site
+ */
+function getGoogleIsReadyToPayRequest() {
+  return Object.assign(
+      {},
+      baseRequest,
+      {
+        allowedPaymentMethods: [baseCardPaymentMethod]
+      }
+  );
+}
+
+/**
+ * Configure support for the Google Pay API
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|PaymentDataRequest}
+ * @returns {object} PaymentDataRequest fields
+ */
+function getGooglePaymentDataRequest() {
+  const paymentDataRequest = Object.assign({}, baseRequest);
+  paymentDataRequest.allowedPaymentMethods = [cardPaymentMethod];
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+  paymentDataRequest.merchantInfo = {
+    // @todo a merchant ID is available for a production environment after approval by Google
+    // See {@link https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist|Integration checklist}
+    // merchantId: '01234567890123456789',
+    merchantName: 'Example Merchant'
+  };
+
+  paymentDataRequest.callbackIntents = ["SHIPPING_ADDRESS",  "SHIPPING_OPTION", "PAYMENT_AUTHORIZATION"];
+  paymentDataRequest.shippingAddressRequired = true;
+  paymentDataRequest.shippingAddressParameters = getGoogleShippingAddressParameters();
+  paymentDataRequest.shippingOptionRequired = true;
+
+  return paymentDataRequest;
+}
+
+/**
+ * Return an active PaymentsClient or initialize
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#PaymentsClient|PaymentsClient constructor}
+ * @returns {google.payments.api.PaymentsClient} Google Pay API client
+ */
+function getGooglePaymentsClient() {
+  if ( paymentsClient === null ) {
+    paymentsClient = new google.payments.api.PaymentsClient({
+      environment: "TEST",
+      merchantInfo: {
+        merchantName: "Example Merchant",
+        merchantId: "01234567890123456789"
+      },
+      paymentDataCallbacks: {
+        onPaymentAuthorized: onPaymentAuthorized,
+        onPaymentDataChanged: onPaymentDataChanged
+      }
+    });
+  }
+  return paymentsClient;
+}
+
+
+function onPaymentAuthorized(paymentData) {
+  return new Promise(function(resolve, reject){
+
+  // handle the response
+  processPayment(paymentData)
+    .then(function() {
+      resolve({transactionState: 'SUCCESS'});
+    })
+    .catch(function() {
+        resolve({
+        transactionState: 'ERROR',
+        error: {
+          intent: 'PAYMENT_AUTHORIZATION',
+          message: 'Insufficient funds',
+          reason: 'PAYMENT_DATA_INVALID'
+        }
+      });
+    });
+
+  });
+}
+
+/**
+ * Handles dynamic buy flow shipping address and shipping options callback intents.
+ *
+ * @param {object} itermediatePaymentData response from Google Pay API a shipping address or shipping option is selected in the payment sheet.
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#IntermediatePaymentData|IntermediatePaymentData object reference}
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentDataRequestUpdate|PaymentDataRequestUpdate}
+ * @returns Promise<{object}> Promise of PaymentDataRequestUpdate object to update the payment sheet.
+ */
+function onPaymentDataChanged(intermediatePaymentData) {
+  return new Promise(function(resolve, reject) {
+
+    let shippingAddress = intermediatePaymentData.shippingAddress;
+    let shippingOptionData = intermediatePaymentData.shippingOptionData;
+    let paymentDataRequestUpdate = {};
+
+    if (intermediatePaymentData.callbackTrigger == "INITIALIZE" || intermediatePaymentData.callbackTrigger == "SHIPPING_ADDRESS") {
+      if(shippingAddress.administrativeArea == "NJ")  {
+        paymentDataRequestUpdate.error = getGoogleUnserviceableAddressError();
+      }
+      else {
+        paymentDataRequestUpdate.newShippingOptionParameters = getGoogleDefaultShippingOptions();
+        let selectedShippingOptionId = paymentDataRequestUpdate.newShippingOptionParameters.defaultSelectedOptionId;
+        paymentDataRequestUpdate.newTransactionInfo = calculateNewTransactionInfo(selectedShippingOptionId);
+      }
+    }
+    else if (intermediatePaymentData.callbackTrigger == "SHIPPING_OPTION") {
+      paymentDataRequestUpdate.newTransactionInfo = calculateNewTransactionInfo(shippingOptionData.id);
+    }
+
+    resolve(paymentDataRequestUpdate);
+  });
+}
+
+/**
+ * Helper function to create a new TransactionInfo object.
+
+ * @param string shippingOptionId respresenting the selected shipping option in the payment sheet.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function calculateNewTransactionInfo(shippingOptionId) {
+  let newTransactionInfo = getGoogleTransactionInfo();
+
+  let shippingCost = getShippingCosts()[shippingOptionId];
+  newTransactionInfo.displayItems.push({
+    type: "LINE_ITEM",
+    label: "Shipping cost",
+    price: shippingCost,
+    status: "FINAL"
+  });
+
+  let totalPrice = 0.00;
+  newTransactionInfo.displayItems.forEach(displayItem => totalPrice += parseFloat(displayItem.price));
+  newTransactionInfo.totalPrice = totalPrice.toString();
+
+  return newTransactionInfo;
+}
+
+/**
+ * Initialize Google PaymentsClient after Google-hosted JavaScript has loaded
+ *
+ * Display a Google Pay payment button after confirmation of the viewer's
+ * ability to pay.
+ */
+function onGooglePayLoaded() {
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.isReadyToPay(getGoogleIsReadyToPayRequest())
+      .then(function(response) {
+        if (response.result) {
+          addGooglePayButton();
+          // @todo prefetch payment data to improve performance after confirming site functionality
+          // prefetchGooglePaymentData();
+        }
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+
+/**
+ * Add a Google Pay purchase button alongside an existing checkout button
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ButtonOptions|Button options}
+ * @see {@link https://developers.google.com/pay/api/web/guides/brand-guidelines|Google Pay brand guidelines}
+ */
+function addGooglePayButton() {
+  const paymentsClient = getGooglePaymentsClient();
+  const button = paymentsClient.createButton({onClick: onGooglePaymentButtonClicked});
+  document.getElementById('buy-now').appendChild(button);
+}
+
+/**
+ * Provide Google Pay API with a payment amount, currency, and amount status
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function getGoogleTransactionInfo() {
+  return {
+    displayItems: [
+      {
+        label: "Subtotal",
+        type: "SUBTOTAL",
+        price: a.toString(),
+        // price:"490",
+      },
+      {
+        label: "Tax",
+        type: "TAX",
+        price: "10",
+      }
+    ],
+    countryCode: 'IN',
+    currencyCode: "INR",
+    totalPriceStatus: "FINAL",
+    // totalPrice:"500",
+    totalPrice: y.toString(),
+    totalPriceLabel: "Total"
+  };
+}
+
+/**
+ * Provide a key value store for shippping options.
+ */
+function getShippingCosts() {
+  return {
+    "shipping-001": "50",
+    "shipping-002": "70",
+    "shipping-003": "90",
+    "shipping-004": "150"
+    
+  }
+}
+
+/**
+ * Provide Google Pay API with shipping address parameters when using dynamic buy flow.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ShippingAddressParameters|ShippingAddressParameters}
+ * @returns {object} shipping address details, suitable for use as shippingAddressParameters property of PaymentDataRequest
+ */
+function getGoogleShippingAddressParameters() {
+  return  {
+    allowedCountryCodes: ['IN'],
+    phoneNumberRequired: true
+  };
+}
+
+/**
+ * Provide Google Pay API with shipping options and a default selected shipping option.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ShippingOptionParameters|ShippingOptionParameters}
+ * @returns {object} shipping option parameters, suitable for use as shippingOptionParameters property of PaymentDataRequest
+ */
+function getGoogleDefaultShippingOptions() {
+  return {
+    defaultSelectedOptionId: "shipping-001",
+    shippingOptions: [
+      {
+        "id": "shipping-001",
+        "label": "+50:Ship within Chennai",
+        
+      },
+      {
+        "id": "shipping-002",
+        "label": "+70: Ship within Coimbatore",
+      
+      },
+      {
+        "id": "shipping-003",
+        "label": "+90:Ship within Madurai",
+        
+      },
+      {
+        "id": "shipping-004",
+        "label": "+150:Ship outside TN",
+        
+      },
+    ]
+  };
+}
+
+/**
+ * Provide Google Pay API with a payment data error.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentDataError|PaymentDataError}
+ * @returns {object} payment data error, suitable for use as error property of PaymentDataRequestUpdate
+ */
+function getGoogleUnserviceableAddressError() {
+  return {
+    reason: "SHIPPING_ADDRESS_UNSERVICEABLE",
+    message: "Cannot ship to the selected address",
+    intent: "SHIPPING_ADDRESS"
+  };
+}
+
+/**
+ * Prefetch payment data to improve performance
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#prefetchPaymentData|prefetchPaymentData()}
+ */
+function prefetchGooglePaymentData() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  // transactionInfo must be set but does not affect cache
+  paymentDataRequest.transactionInfo = {
+    totalPriceStatus: 'NOT_CURRENTLY_KNOWN',
+    currencyCode: 'INR'
+  };
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.prefetchPaymentData(paymentDataRequest);
+}
+
+
+
+/**
+ * Show Google Pay payment sheet when Google Pay payment button is clicked
+ */
+function onGooglePaymentButtonClicked() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.loadPaymentData(paymentDataRequest);
+}
+
+/**
+ * Process payment data returned by the Google Pay API
+ *
+ * @param {object} paymentData response from Google Pay API after user approves payment
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentData|PaymentData object reference}
+ */
+function processPayment(paymentData) {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      // show returned data in developer console for debugging
+      console.log(paymentData);
+      // @todo pass payment token to your gateway to process payment
+      paymentToken = paymentData.paymentMethodData.tokenizationData.token;
+
+      resolve({});
+    }, 3000);
+  });
+}
+</script>
+
         </div>
     <!-- Content--> 
+    <br><br>
   </div>
+  <!-- <br> -->
       <!--Footer-->
       <div id="footer">
+
     <div class="footer-top">
           <div class="page">
+<br><br>
         <div class="f-nav-section">
               <ul>
             <li ><a href="index.html">Home </a></li>
@@ -211,6 +763,7 @@
           </div>
             </div>
       </div>
+      <!-- <br> -->
         </div>
     <div class="page">
           <div class="footer-bottom">
@@ -228,11 +781,16 @@
             <li><a href="#" class="twitter"></a></li>
             <li class="sms-last"><a href="#" class="bing"></a></li>
           </ul>
+          <!-- <br> -->
             </div>
+            <!-- <br> -->
       </div>
+
         </div>
+
   </div>
       <!--Footer--> 
+
     </div>
     <br>
  <!--  <button id="ambu" onclick="myFunction1()">Amazon</button>
@@ -250,7 +808,50 @@
   <button id="nabu"onclick="myFunction7()">Naaptol</button> -->
 <!-- <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5125d19d7877c409"></script>
---> 
+--><!-- 
+ --> <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style >
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #101010 ;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -306,6 +907,14 @@ function myFunction6() {
 function myFunction7() {
   var product = document.getElementById("am12").value;
   var url = "https://www.naaptol.com/search.html?type=srch_catlg&kw="+encodeURIComponent(product)
+  window.open(url);
+
+}
+function myFunction8() {
+  var product = document.getElementById("am12").value;
+  // https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210104111756&SearchText=book
+    var url = "  https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210104111756&SearchText="+encodeURIComponent(product)
+
   window.open(url);
 
 }
