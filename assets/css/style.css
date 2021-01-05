@@ -1,49 +1,77 @@
 @charset "utf-8";
 /* CSS Document */
+.sb-example-1{
+	margin-left: 150px;
+}
+.sb-example-1 .search {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: flex;
+}
+.sb-example-1 .searchTerm {
+  width: 70%;
+  text-align: center;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  /*color: #9DBFAF;*/
+}
+.sb-example-1 .searchTerm:focus{
+  color: black;
+  text-align: center;
+    font-weight: bold;
+
+}
+.sb-example-1 .searchButton {
+  width: 90px;
+  height: 42px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color:white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.sb-example-1 .searchButton i{
+  color: white;
+}
+
 * {
 	margin:0;
 	padding:0;
 }
-#am11 {
-  height: 100%;
-  width: 100%;
-  height: 50px;
-  font-size: 15px;
-  border-radius: 15px;
-  color: black;
-  background:  white;
-  padding-right:0;
-  cursor: text;
-  font-weight: 100;
+/*#am12{
+	height:550px;
+	width: 500px;
+}*/
+.right{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#ambu {
+  padding: 15px ;
+  font-size: 17px;
   text-align: center;
-  font-color:red;
-  color: black;
-  background-color:grey;
-}
-#am11 button{
-  position: relative;  
-  border-radius: 15px;
-  font-size: 25px;
-  color: black;
   cursor: pointer;
-  /*background-color: inherit;*/
-  /*border: none;*/
-  /*right: 50px;*/
+  outline: none;
+  color: white;
+  background-color:#181818	;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 7px #F7786B ;
 }
 
-#am11{
-    display: inline-block;
-    width: 60%;
-    margin: 0 auto;
-    user-select: none;
-    /*justify-content: space-between;*/
-}
-#am11{
-  width: 20%;
-  height: 20%;
-  border-radius: 5px;
-}
+#ambu:hover {background-color: 	#00FFCC	 	}
 
+#ambu:active {
+  background-color:#6666CC;
+  box-shadow: 0 5px #6666CC;
+  transform: translateY(4px);
+}
 
 
 body {
@@ -64,54 +92,6 @@ body {
 	border:1px solid #cfcfcf;
 	color:#c6c6c6;
 }
-#ambu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-#flbu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-  #snbu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-  #snbu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-    #bigbu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-    #ebbu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-    #mybu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
-    #nabu{
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    border-size:10px;
-    padding: 10px 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   }
 
 
 /* Basic structure */
@@ -250,7 +230,7 @@ body {
 	width:28px;
 	margin-right:15px !important;
 }
-.search-box {
+/*.search-box {
 	overflow:hidden;
 	float:center;
 	left: 500px;
@@ -263,8 +243,9 @@ body {
 }
 .search-box li input {
 	padding:0 5px;
-}
-.search-box li a {
+}*/
+/*.search-box li a 
+{
 	background:url(../images/search.png) no-repeat;
 	display:block;
 	height: 16px;
@@ -273,7 +254,7 @@ body {
 	text-indent: -9999px;
 	top: 6px;
 	width: 16px;
-}
+}*/
 .submit {
 	width:30px !important;
 	height:26px;
