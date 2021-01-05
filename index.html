@@ -92,9 +92,9 @@
   "enabled":true,
   "chatButtonSetting":{
       "backgroundColor":"#101010",
-      "ctaText":"Hey there!",
+      "ctaText":"Buy Products",
       "borderRadius":"25",
-      "marginLeft":"0",
+      "marginLeft":"10",
       "marginBottom":"20",
       "marginRight":"50",
       "position":"left"
@@ -195,46 +195,58 @@
      <!--  <div id="categ">
     <input type="text"  id="am12" placeholder ="       Choose Product ">
     <br>
-  </div>  --> <br><br><br>
-		  <ul class="search-box" style="position: relative;margin-left: -296px">
+  </div>  --> <!-- <br><br><br> --><br><br>
+  <div class="sb-example-1">
+         <div class="search">
+<!--             <input type="text" class="searchTerm" placeholder="What are you looking for?">
+
+ -->
+ <input type="text" class="searchTerm" placeholder="SEARCH THE PRODUCT"value="SEARCH THE PRODUCT" id="am12" autocomplete="off" onkeypress="submitenter_search(event);" onblur="if (this.value=='')this.value='SEARCH THE PRODUCT';" onfocus="if (this.value=='SEARCH THE PRODUCT')this.value=''"  />            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+         </div>
+      </div>
+
+		 <!--  <ul class="search-box" style="position: relative;margin-left: -296px;">
               <li>
+
             <input type="text" value="search" id="am12" autocomplete="off" onkeypress="submitenter_search(event);" onblur="if (this.value=='')this.value='search';" onfocus="if (this.value=='search')this.value=''"  />
           </li>
               <li class="sms-last">
             <input type="submit" value="" class="submit" />
             <a href="#"> search</a></li>
-            </ul>
+            </ul> --><br>
 			<!-- search bar -->
+			<!-- <br>
 			<br>
 			<br>
 			<br>
-			<br>
-		  
+		   -->
         <div class="banner">
               <div class="slides">
             <div class="slides_container">
-                  <div class="imgeslider"><img src="assets/images/amazon.png" alt="lapy" title="product" />
+                  <div class="imgeslider"><a href="https://www.amazon.com/"><img src="assets/images/amazon.png" alt="lapy" title="product" /></a>
                 <div class="banner-text">
                       <h1>Lorem Ipsum</h1>
                       <span>Lorem Ipsum is simply</span>
                       <p>Lorem Ipsum is simply dummy text of the printing</p>
                       <a href="#"> Click Here <span></span></a></div>
               </div>
-                  <div class="imgeslider"><img src="assets/images/flipkart.jpg" alt="lapy" title="product" />
+                  <div class="imgeslider"><a href="https://www.flipkart.com/"><img src="assets/images/flipkart.jpg" alt="lapy" title="product" /></a>
                 <div class="banner-text">
                       <h1>Lorem Ipsum</h1>
                       <span>Lorem Ipsum is simply</span>
                       <p>Lorem Ipsum is simply dummy text of the printing</p>
                       <a href="#"> Click Here <span></span></a></div>
               </div>
-                  <div class="imgeslider"><img src="assets/images/snapdeal.png" alt="lapy" title="product" />
+                  <div class="imgeslider"><a href="https://www.snapdealt.com/"><img src="assets/images/snapdeal.png" alt="lapy" title="product" /></a>
                 <div class="banner-text">
                       <h1>Lorem Ipsum</h1>
                       <span>Lorem Ipsum is simply</span>
                       <p>Lorem Ipsum is simply dummy text of the printing</p>
                       <a href="#"> Click Here <span></span></a></div>
               </div>
-                  <div class="imgeslider"><img src="assets/images/ebay.png" alt="lapy" title="product" />
+                  <div class="imgeslider"><a href="https://www.ebay.com/"><img src="assets/images/ebay.png" alt="lapy" title="product" /></a>
                 <div class="banner-text">
                       <h1>Lorem Ipsum</h1>
                       <span>Lorem Ipsum is simply</span>
@@ -246,7 +258,8 @@
 
           </div>
             </div>
-        
+        <br><br><br>
+
         <div class="product-des">
               <div class="product-info"><img src="assets/images/lapy-t.jpg" alt="lapy" title="product" class="lapy" />
             <h2>Dell Laptop </h2>
@@ -284,21 +297,22 @@
 
       </div>
 
-  <button id="ambu" onclick="myFunction1()">&nbsp;Amazon&nbsp;</button>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <button id="flbu" onclick="myFunction2()">Flipkart</button>
+ <button class="right" id="ambu" onclick="myFunction1()">&nbsp;Amazon&nbsp;</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+<button id="ambu" onclick="myFunction2()">Flipkart</button>
   
-  <button id="snbu"onclick="myFunction3()">Snapdeal</button>
+  <button class="right" id="ambu"onclick="myFunction3()">Snapdeal</button>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
 <!--   <br> <br>
- -->  <button id="ebbu"onclick="myFunction5()">eBay&nbsp;&nbsp;&nbsp;</button>
- <button id="bigbu"onclick="myFunction4()">Bigbasket</button>
+ -->  <button id="ambu"onclick="myFunction5()">eBay&nbsp;&nbsp;&nbsp;</button>
+ <button class="right" id="ambu"onclick="myFunction4()">Bigbasket</button>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <button id="mybu"onclick="myFunction6()">Myntra&nbsp;</button>
+  <button id="ambu" onclick="myFunction6()">Myntra&nbsp;</button>
   
-  <button id="nabu"onclick="myFunction7()">Naaptol</button>
+  <button class="right" id="ambu"onclick="myFunction7()">Naaptol</button>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button id="nabu"onclick="myFunction8()">Alibaba</button>
+    <button id="ambu"onclick="myFunction8()">Alibaba</button>
 
         </div>
 <!-- <img src="new.jpg"> -->
@@ -836,7 +850,7 @@ function topFunction() {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
